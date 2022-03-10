@@ -1,0 +1,44 @@
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.left {
+  flex: 1;
+  max-width: 682px;
+  width: 100%;
+  margin-right: 2rem;
+}
+.right {
+  flex: 0.35;
+}
+
+.right img {
+  width: 100%;
+  border-radius: 20px;
+}
+.socialLinks {
+  display: flex;
+  align-items: center;
+}
+
+.socialLinks > :not(:last-child) {
+  margin-right: 40px;
+}
+
+@media (max-width: 1000px) {
+  .section {
+    flex-direction: column-reverse;
+  }
+
+  .left {
+    margin-right: 0rem;
+    margin-top: 2rem;
+    max-width: 100%;
+  }
+}
+@media (max-width: 760px) {
+  .socialLinks > :not(:last-child) {
+    margin-right: 1rem;
+  }
+}

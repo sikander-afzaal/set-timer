@@ -1,0 +1,34 @@
+.section {
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  flex: 1;
+  margin-right: 2rem;
+}
+.right {
+  flex: 0.8;
+}
+
+.right img {
+  width: 100%;
+}
+
+.btn svg {
+  fill: black;
+}
+
+@media (max-width: 1000px) {
+  .section {
+    flex-direction: column-reverse;
+  }
+
+  .right {
+    max-width: 400px;
+  }
+
+  .left {
+    margin-right: 0rem;
+  }
+}

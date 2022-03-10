@@ -1,0 +1,92 @@
+.navbar {
+  padding: 36px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.logo1 {
+  width: 82px;
+}
+.logo2 {
+  width: 317px;
+}
+
+.logo > :not(:last-child) {
+  margin-right: 8px;
+}
+
+.Right {
+  display: flex;
+  align-items: center;
+}
+
+.Right > :not(:last-child) {
+  margin-right: 30px;
+}
+
+@media (max-width: 1000px) {
+  .logo1 {
+    width: 6vw;
+  }
+  .logo2 {
+    width: 30vw;
+  }
+  .logo1 {
+    margin-right: 5px;
+  }
+
+  .Right > :not(:last-child) {
+    margin-right: 2vw;
+  }
+
+  .navbar {
+    padding: 26px 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .connectBtn {
+    padding: 0 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .logo1 {
+    width: 32px;
+  }
+  .logo2 {
+    width: 150px;
+  }
+
+  .Right > :not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .connectBtn {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (max-width: 380px) {
+  .logo1 {
+    width: 30px;
+  }
+  .logo2 {
+    width: 130px;
+  }
+
+  .Right > :not(:last-child) {
+    margin-right: 8px;
+  }
+}

@@ -1,0 +1,33 @@
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo > :not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.socialLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialLinks > :not(:last-child) {
+  margin-right: 26px;
+}
+
+@media (max-width: 500px) {
+  .logo1 {
+    width: 60px;
+  }
+  .logo2 {
+    max-width: 250px;
+    width: 100%;
+  }
+  .socialLinks > :not(:last-child) {
+    margin-right: 1rem;
+  }
+}

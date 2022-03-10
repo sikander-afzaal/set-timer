@@ -1,0 +1,17 @@
+.videoWrapper {
+  max-width: 100%;
+  width: 100%;
+  position: relative; /* If you want text inside of it */
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  margin: 0 auto;
+}
+
+/* If you want text inside of the container */
+.videoWrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}

@@ -1,0 +1,93 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-bottom: 3rem;
+}
+
+.content {
+    border: 5px solid var(--yellow);
+    flex: 1;
+    padding-top: 2rem;
+}
+
+.title {
+    margin-left: 3rem;
+    letter-spacing: 5px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2.5rem 2rem;
+    padding-right: 3rem;
+}
+
+.grid>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mintBtn {
+    padding: 0.8rem 0;
+    width: 100%;
+    position: relative;
+}
+
+.mintBtn.silver {
+    background-color: rgb(190, 190, 190);
+    box-shadow: -3px 3px 0 3px rgba(190, 190, 190, 0.151);
+}
+
+.mintBtn.gold {
+    background-color: #c59236;
+    box-shadow: -3px 3px 0 3px #c593363f;
+}
+
+.mintBtn.platinum {
+    background-color: white;
+    box-shadow: -3px 3px 0 3px rgba(255, 255, 255, 0.24);
+}
+
+.mintBtn.daimond {
+    background-color: #b6f0fd;
+    box-shadow: -3px 3px 0 3px #b6f0fd3b;
+}
+
+.inActive, .inActive p {
+    color: gray;
+}
+
+@media (max-width: 800px) {
+    .grid {
+        gap: 2.5rem 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .content {
+        border: 2px solid var(--yellow);
+        padding-top: 1rem;
+    }
+    .grid {
+        gap: 2rem 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .mintBtn {
+        padding: 0.6rem 0;
+    }
+    .mintBtn.silver {
+        box-shadow: -2px 2px 0 2px rgba(190, 190, 190, 0.151);
+    }
+    .mintBtn.gold {
+        box-shadow: -2px 2px 0 2px #c593363f;
+    }
+    .mintBtn.platinum {
+        box-shadow: -2px 2px 0 2px rgba(255, 255, 255, 0.24);
+    }
+    .mintBtn.daimond {
+        box-shadow: -2px 2px 0 2px #b6f0fd3b;
+    }
+}
